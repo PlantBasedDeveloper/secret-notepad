@@ -1,0 +1,15 @@
+package com.challenge.secretnotepad.core.cryptography;
+
+import com.challenge.secretnotepad.exceptions.DecryptionException;
+import com.challenge.secretnotepad.exceptions.EncryptionException;
+
+/**
+ * Interface to be implemented by the Cryptography service(s) of the app.
+ * <p>
+ * @author Mohamed Amine Allani
+ */
+
+public interface CryptographyService {
+    String encrypt(String message) throws EncryptionException;
+    String decrypt(String message) throws DecryptionException;
+}
